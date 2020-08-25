@@ -2,7 +2,7 @@ require "option_parser"
 require "../../../vendor/open.cr/src/external/open"
 
 class Crdoc::Command::Search
-  def initialize(@docs, @kind = nil)
+  def initialize(@docs, @kind : Symbol? = nil)
   end
 
   private def kind

@@ -89,7 +89,7 @@ class Crdoc::Documents
     end
   end
 
-  def list(kind = nil: Symbol?)
+  def list(kind : Symbol? = nil)
     c = cache
     if kind
       c[kind].map{|k, _| k}
@@ -101,7 +101,7 @@ class Crdoc::Documents
     end
   end
 
-  def list_paths(kind = nil: Symbol?)
+  def list_paths(kind : Symbol? = nil)
     c = cache
     if kind
       c[kind].map{|_, v| v}
@@ -114,6 +114,6 @@ class Crdoc::Documents
   end
 
   # Currently returns only first candidate
-  def search(kind = nil: Symbol?)
+  def search(kind : Symbol? = nil)
   end
 end
